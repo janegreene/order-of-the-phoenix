@@ -7,7 +7,7 @@ RSpec.feature 'user can search for order of the phoenix members by house' do
     click_on "Search For Members"
     expect(current_path).to eq(search_path)
 
-    expect(page).to have_content("There are 21 members of the Order of the Phoenix")
+    expect(page).to have_content("There are 21 members of the Order of the Phoenix in Gryffindor house.")
     expect(page).to have_css('.member', count: 21)
     within(first('.member')) do
         expect(page).to have_css('.role')
