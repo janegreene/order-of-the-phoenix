@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.feature 'user can search for order of the phoenix members by house' do
   it "and return details " do
-    select 'Gryffindor', from: "house"
+    visit '/'
+    select 'Gryffindor', from: 'house'
     click_on "Search For Members"
     expect(current_path).to eq(search_path)
 
