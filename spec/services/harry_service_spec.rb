@@ -11,12 +11,12 @@ RSpec.describe HarryService do
       expect(results).to be_an(Array)
       expect(results.count).to eq(21)
 
-      first_member = results.last
+      last = results.last
 
-      expect(first_member).to have_attributes(name: 'Ronald Weasley')
-      expect(first_member).to have_attributes(role: 'student')
-      expect(first_member).to have_attributes(house: 'Gryffindor')
-      expect(first_member).to have_attributes(patronus: 'jack russell terrier')
+      expect(last).to have_attributes(name: 'Ronald Weasley')
+      expect(last).to have_attributes(role: 'student')
+      expect(last).to have_attributes(house: 'Gryffindor')
+      expect(last).to have_attributes(patronus: 'jack russell terrier')
     end
   end
 end
