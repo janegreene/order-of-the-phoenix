@@ -9,7 +9,7 @@ RSpec.feature 'user can search for order of the phoenix members by house' do
 
     expect(page).to have_content("There are 21 members of the Order of the Phoenix")
     expect(page).to have_css('.member', count: 21)
-
+    save_and_open_page
     within(first('.member')) do
       within('.name') do
         # expect(page).to have_content("")

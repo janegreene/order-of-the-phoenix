@@ -1,0 +1,10 @@
+There are <%= @characters.count %> members of the Order of the Phoenix
+
+<% @characters.each do |member| %>
+  <section class="member">
+    <h3 class="name"><%= member.name %></h3>
+    <div class="house"><%= member.house%></div>
+    <div class="role"><%= member.role%></div>
+    <div class="patronus"><%= member.patronus%></div>
+  </section>
+<%end %>

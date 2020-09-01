@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 class SearchController < ApplicationController
   def index
     conn = Faraday.new(url: "https://www.potterapi.com") do |faraday|
